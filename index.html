@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-showcase="1">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Abdul Qadir — Front-End Developer</title>
+  <meta
+    name="description"
+    content="Abdul Qadir — Front-End Developer specializing in performant, accessible, and detail-oriented web interfaces."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- React (for isolated components only) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER / NAVIGATION
+========================= -->
+<header role="banner">
+  <nav class="navbar container" role="navigation" aria-label="Primary navigation">
+    <div class="logo">
+      <strong>Abdul Qadir</strong>
+      <span class="sr-only">Front-End Developer</span>
+    </div>
+
+    <ul id="menu" class="nav-list">
+      <li><a class="nav-link" href="#hero">Home</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="controls" role="group" aria-label="Display controls">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button id="styleToggle" class="theme-toggle" aria-label="Toggle visual effects">⚡</button>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- =========================
+     HERO
+========================= -->
+<section id="hero" class="hero anchor-fix" aria-labelledby="hero-heading">
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+      <h1 id="hero-heading">
+        Hi, I’m <span class="name">Abdul Qadir</span>
+      </h1>
+
+      <p class="lead">
+        Front-End Developer focused on building
+        <strong>performant</strong>, <strong>accessible</strong>,
+        and <strong>detail-driven</strong> user interfaces —
+        blending clean design with expressive motion.
+      </p>
+
+      <div class="hero-ctas">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="hero-features" aria-label="Core strengths">
+        <div class="chip">Responsive</div>
+        <div class="chip">Accessible</div>
+        <div class="chip">React</div>
+        <div class="chip">Motion</div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="visual-wrap" id="visualWrap">
+        <img
+          class="lazy"
+          src="assets/herosection.svg"
+          alt="Laptop mockup displaying a modern user interface"
+          loading="lazy"
+        />
+      </div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+  </div>
+
+  <div class="scroll-down" aria-hidden="true"></div>
+</section>
+
+<!-- =========================
+     ABOUT
+========================= -->
+<section id="about" class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <h2 id="about-heading">About Me</h2>
+    <p class="lead">
+      I specialize in front-end development with a strong focus on
+      <strong>usability</strong>, <strong>accessibility</strong>, and
+      <strong>maintainable UI architecture</strong>.
+      I care deeply about the small details that make interfaces feel intuitive,
+      fast, and polished.
+    </p>
+  </div>
+</section>
+
+<!-- =========================
+     SKILLS
+========================= -->
+<section id="skills" class="section" aria-labelledby="skills-heading">
+  <div class="container">
+    <h2 id="skills-heading">Skills & Tools</h2>
+
+    <div class="skills-grid" role="list">
+      <div class="skill-card" role="listitem">HTML</div>
+      <div class="skill-card" role="listitem">CSS</div>
+      <div class="skill-card" role="listitem">JavaScript</div>
+      <div class="skill-card" role="listitem">React</div>
+      <div class="skill-card" role="listitem">UI / UX</div>
+      <div class="skill-card" role="listitem">Salesforce Admin</div>
+      <div class="skill-card" role="listitem">Python</div>
+      <div class="skill-card" role="listitem">Git</div>
+      <div class="skill-card" role="listitem">GitHub</div>
+      <div class="skill-card" role="listitem">Graphic Design</div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PROJECTS
+========================= -->
+<section id="projects" class="section" aria-labelledby="projects-heading">
+  <div class="container">
+    <h2 id="projects-heading">Selected Projects</h2>
+    <p class="lead">
+      A selection of projects that highlight my approach to
+      problem-solving, UI architecture, and attention to detail.
+    </p>
+
+    <div id="sliderRoot" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="container">
+    <h2 id="contact-heading">Contact</h2>
+    <p class="lead">
+      Have a project in mind or want to collaborate?
+      I’m always open to discussing new ideas and opportunities.
+    </p>
+
+    <div id="contactRoot" aria-live="polite"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="section center" role="contentinfo">
+  <small>
+    &copy; <span id="year"></span> Abdul Qadir — Built with care.
+  </small>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script type="text/babel" src="Slider.js"></script>
+<script type="text/babel" src="ContactForm.js"></script>
+
+</body>
+</html>
